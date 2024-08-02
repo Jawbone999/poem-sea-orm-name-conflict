@@ -1,0 +1,10 @@
+[package]
+name = "sea-orm-poem-name-conflict"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+poem = "3.0.4"
+poem-openapi = { version = "5.0.3", features = ["swagger-ui"] }
+sea-orm = { version = "1.0.0", features = ["macros", "runtime-tokio-native-tls", "sqlx-postgres"] }
+tokio = { version = "1.39.2", features = ["macros", "rt-multi-thread"] }
